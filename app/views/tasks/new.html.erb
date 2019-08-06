@@ -1,0 +1,11 @@
+<h2>New task</h2>
+
+<%= form_for @task, url: {action: "create"} do |f| %>
+  <p>Title</p>
+  <%= f.text_field :title %>
+  <br>
+  <br>
+  <p>Details</p>
+  <%= f.text_area :details, size: "30x12" %>
+  <%= f.submit "Create task" %>
+<% end %>
